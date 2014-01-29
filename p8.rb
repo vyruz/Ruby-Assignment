@@ -31,3 +31,6 @@ puts f.bar_history.to_s
 f=Foo.new
 f.bar = "new f"
 puts f.bar_history.to_s
+
+#source 
+#https://gist.github.com/feiskyer/1964749
