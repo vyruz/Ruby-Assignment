@@ -9,4 +9,6 @@ def count_words(input)
   return h
 end
 
+input = gets.chomp
+puts count_words(input)
 

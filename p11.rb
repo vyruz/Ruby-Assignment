@@ -11,7 +11,7 @@ class CartesianProduct
 
   def each
     @setA.each do |x| 
-      @setB.each { |y| yield [x, y] }
+      @setB.each { |y| yield [x, y] } #return array of each element of A with each of B
     end
   end
 
