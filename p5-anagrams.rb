@@ -4,7 +4,7 @@
 
 def combine_anagrams(words)
   return words.group_by { |element| element.downcase.chars.sort }.values #hash of sorted array of characters => words with said chars
-  # example ["a", "c", "r", "s"]=>["cars", "racs", "scar"]
+  # example ["a", "c", "r", "s"]=>["cabrs", "racs", "scar"]
 end
 
 
