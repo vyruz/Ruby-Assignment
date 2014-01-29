@@ -2,7 +2,7 @@
 #part 9 - currency exchange
 
 class Numeric
-  @@currencies = {'dollar' => 1.00, 'yen' => 0.013, 'euro' => 1.292, 'rupee' => 0.019} #ie yen => .013 yen/dollar
+  @@currencies = {'dollar' => 1.00, 'yen' => 0.013, 'euro' => 1.292, 'rupee' => 0.019} #ie yen => .013 dollar/yen
   def method_missing(method_id)
     singular_currency = method_id.to_s.gsub(/s$/,'')
     if @@currencies.has_key?(singular_currency)
