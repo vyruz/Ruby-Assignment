@@ -1,11 +1,11 @@
 #!/usr/bin/ruby
-# -*- coding: utf-8 -*-
+
 #part 6
 
 def glob_match(filenames, pattern)
-  pattern = pattern.gsub(/[*?.]/,'.'=>'\.', '*' => '.*', '?' => '.')
+  pattern = pattern.gsub(/[*?.]/,'.'=>'\.', '*' => '.*', '?' => '?')
   regex = Regexp.new(pattern)
-  puts regex
+  # puts regex
   filenames.select do |filename|
     filename =~ regex
   end
