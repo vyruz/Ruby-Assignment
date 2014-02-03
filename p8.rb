@@ -6,7 +6,7 @@ class Class
     attr_name = attrName.to_s #make sure it's a string
     attr_reader attr_name # create the attribute's getter
     attr_reader attr_name + "_history"
-    class_eval %Q{  
+    class_eval %Q{ #exaluates block, %Q allows for block of multiple lines
       def #{attr_name}=(value)  
         @#{attr_name} = value
 
