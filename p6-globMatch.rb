@@ -3,9 +3,7 @@
 #part 6
 
 def glob_match(filenames, pattern)
-  puts pattern
-  pattern = pattern.gsub(/[*?.]/, '*' => '.*', '.' => '\.', '?' => '.')
-  puts pattern
+  pattern = pattern.gsub(/[*?]/,'*' => '.*', '?' => '.')
   regex = Regexp.new(pattern)
   filenames.select do |filename|
     filename =~ regex

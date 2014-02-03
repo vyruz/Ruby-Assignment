@@ -23,8 +23,5 @@ class Numeric
 
 end
 
-puts "dollar to euro to dollar #{(1.dollars.in(:euros)).euros.in(:dollars)}"
-puts "dollar to rupee #{1.dollars.in(:rupees)}"
-puts "dollar to yen #{1.dollars.in(:yen)}"
-puts "1 euro to yen #{1.euro.in(:yen)}"
-puts "5 dollar to yen #{5.dollars.in(:yen)}"
+puts "dollar to euro #{ 1.dollars.in(:euro) }"
+puts "euro to dollar  #{ 1.euro.in(:dollars) }"

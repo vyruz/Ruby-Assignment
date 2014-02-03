@@ -12,6 +12,7 @@ class Dessert
       return true
     else
       return false
+    end
   end
 
   def delicious?
@@ -35,12 +36,10 @@ class JellyBean < Dessert
   end
 end
 
-a=JellyBean.new("a",232,"asd")
+a=JellyBean.new("red",100,"cherry")
 p a.delicious?
 p a.healthy?
-b=Dessert.new("asd",190)
+b=Dessert.new("pie",190)
 p b.delicious?
 p b.healthy?
-
-
 
