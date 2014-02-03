@@ -9,6 +9,7 @@ def count_words(input)
   return h
 end
 
-input = gets.chomp
+
+input = "This is a test string to count the words of this string."
 puts count_words(input)
 

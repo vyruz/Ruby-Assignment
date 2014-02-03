@@ -7,6 +7,7 @@ class Numeric
     singular_currency = method_id.to_s.gsub(/s$/,'')
     if @@currencies.has_key?(singular_currency)
       self * @@currencies[singular_currency]
+
     else
       super
     end
@@ -25,3 +26,4 @@ end
 
 puts "dollar to euro #{ 1.dollars.in(:euro) }"
 puts "euro to dollar  #{ 1.euro.in(:dollars) }"
+

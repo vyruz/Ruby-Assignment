@@ -7,8 +7,6 @@ class CartesianProduct
   def initialize(setA, setB)
     @setA = setA
     @setB = setB
-    @setC = []
-    return @setC
   end
 
   def each
